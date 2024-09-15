@@ -1,0 +1,181 @@
+:root {
+    --primario: #9C27B0; /* Fondo principal */
+    --primarioOscuro: #89119D; /* Fondo del footer */
+    --secundario: #FFCE00; /* Color de los textos destacados */
+    --blanco: #FFF; /* Blanco */
+    --negro: #000; /* Negro */
+    --fuentePrincipal: 'Staatliches', cursive; /* Fuente principal */
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.15;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--primario); /* Color de fondo */
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--blanco);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--primario);
+}
+
+.header__logo {
+    max-width: 20rem;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+}
+
+.navegacion__enlace {
+    color: var(--blanco);
+    text-transform: uppercase;
+    margin: 0 2rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navegacion__enlace--activo {
+    color: var(--secundario);
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--secundario);
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.camisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.camisa__imagen {
+    max-width: 50%;
+}
+
+.camisa__contenido {
+    max-width: 45%;
+}
+
+.camisa__contenido p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__campo {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.formulario__submit {
+    padding: 1rem;
+    background-color: var(--secundario);
+    color: var(--negro);
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario__submit:hover {
+    background-color: var(--secundarioOscuro);
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.nosotros__texto {
+    max-width: 60%;
+}
+
+.nosotros__imagen {
+    max-width: 35%;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.icono {
+    max-width: 20%;
+}
+
+.icono img {
+    max-width: 100%;
+}
+
+.icono p {
+    color: var(--secundario);
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.icono span {
+    color: var(--blanco);
+    font-size: 1.4rem;
+}
+
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer__texto {
+    color: var(--blanco);
+    font-size: 1.6rem;
+    margin: 0;
+}
+.porque-comprar {
+    background-color: #9d31b8; /* Color de fondo similar al de la imagen */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espacio alrededor del texto */
+}
+
+.porque-comprar h2 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 4rem; /* Aumentar el tamaño del texto */
+    color: #ffd300; /* Color del texto en amarillo */
+    margin: 0;
+}
+

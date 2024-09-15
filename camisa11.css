@@ -1,0 +1,119 @@
+/* General */
+body {
+    background-color: var(--primario);
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+}
+
+/* Header */
+.header {
+    background-color: var(--primarioOscuro);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.header__logo {
+    max-width: 300px;
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.navegacion__enlace {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+.navegacion__enlace--activo {
+    color: var(--secundario);
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Sección Producto */
+.camisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.camisa__imagen {
+    max-width: 400px;
+    height: auto;
+}
+
+.camisa__contenido {
+    max-width: 600px;
+    padding-left: 2rem;
+}
+
+.camisa__contenido p {
+    font-size: 1.8rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.formulario__campo {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.formulario__submit {
+    background-color: var(--secundario);
+    color: var(--negro);
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primarioOscuro);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer__texto {
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
